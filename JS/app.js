@@ -1,8 +1,21 @@
-// Enkel testfunktion
-console.log("Toscana Reseguiden laddad!");
+function search() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const sections = {
+        "om toscana": "#om",
+        "byar och städer": "#byar",
+        "mat och vin": "#mat",
+        "vingårdar": "#vingardar",
+        "sevärdheter": "#sevardheter",
+        "karta": "#karta"
+    };
 
-function showAlert() {
-    alert("Välkommen till Toscana!");
+    if (sections[input]) {
+        window.location.href = sections[input];
+    } else {
+        alert("Kategorin hittades inte. Försök igen.");
+    }
 }
 
-// Om du vill kan du koppla detta till en knapp i HTML
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}

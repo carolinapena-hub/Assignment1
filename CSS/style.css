@@ -1,32 +1,85 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #fdf6e3;
-    color: #333;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header */
-header {
-    background-color: #b3d4fc;
-    padding: 20px;
-    margin-bottom: 20px;
+.banner {
+    background-image: url('https://images.unsplash.com/photo-1744909229894-883bb19b552f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
 }
 
-header h1 {
-    font-size: 2rem;
+.banner input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 200px;
+    margin-top: 20px;
 }
 
-nav ul {
-    list-style: none;
+.banner button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ffffffcc;
+    cursor: pointer;
+}
+
+.kategori-nav ul {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    list-style: none;
+    background-color: #eee;
+    padding: 10px;
+    margin: 0;
+}
+
+.kategori-nav li {
+    margin: 0 15px;
+}
+
+.kategori-nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+footer {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer button {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+footer a {
+    display: block;
+    margin-bottom: 20px;
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.kommentar {
+    margin-top: 20px;
+}
+
+.kommentar textarea {
+    width: 300px;
+    height: 150px;
+    resize: none;
+    border-radius: 5px;
+    padding: 10px;
 }
