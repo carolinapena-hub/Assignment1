@@ -2,10 +2,10 @@ function search() {
     const input = document.getElementById("searchInput").value.toLowerCase();
     const sections = {
         "om toscana": "#om",
-        "byar och städer": "#byar",
+        "byar och stader": "#byar",
         "mat och vin": "#mat",
-        "vingårdar": "#vingardar",
-        "sevärdheter": "#sevardheter",
+        "vingardar": "#vingardar",
+        "sevardheter": "#sevardheter",
         "karta": "#karta"
     };
 
