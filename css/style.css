@@ -202,3 +202,7 @@ footer a {
 .back-button a:hover {
     background-color:darkolivegreen;
 }
+
+.vindruvor label {
+    width: 100px;%;
+}
