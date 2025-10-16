@@ -206,3 +206,45 @@ footer a {
 .vindruvor label {
     width: 100px;%;
 }
+h2 {
+    font-weight: bold;
+}
+
+/*storlek bild index rosor*/
+.rosor {
+    width: 300px;
+}
+
+/*storlek bild stenhus*/
+.stenhus{
+    width: 300px;
+}
+
+/*Storlek bild med mat och vin*/
+.bordmedmat{
+    width: 300px;
+}
+
+/*Storlek bild korridorvingard*/
+.korridorvingard{
+    width: 400px;
+}
+/*Storlek bild bysevardheter*/
+.bysevardheter{
+    width: 400px;
+}
+
+.kommentar-form button {
+    background-color: #8c2f39;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.kommentar-form button:hover {
+    background-color: #a94452;
+}
