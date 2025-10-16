@@ -101,6 +101,40 @@ body {
     }
 }
 
+/* Se till att html och body inte begränsar bredden */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Bannercontainer */
+.undersida-banner {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Själva bilden */
+.undersida-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Rubrik ovanpå bilden (valfritt) */
+.undersida-banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 36px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
 /* Fade-in animation */
 @keyframes fadeIn {
     to {
