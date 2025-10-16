@@ -6,15 +6,23 @@
     <title>Reseguide till Toscana</title>
     <!-- Link to CSS -->
     <link rel="stylesheet" href="/css/style.css">
+/*Interaktiv karta*/
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
 
 <!-- Banner -->
-<header class="banner">
+<header class="banner"> /*Banner*/
     <h1>Upptäck Toscana</h1>
     <input type="text" id="searchInput" placeholder="Sök..." />
     <button onclick="search()">Sök</button>
+
 </header>
+
 
 <!-- Navigering -->
 <nav class="kategori-nav">
@@ -27,140 +35,70 @@
         <li><a href="#karta">Karta</a></li>
     </ul>
 </nav>
-
 <!-- Sektioner -->
 
 <!-- Sektion Om Toscana -->
-<section id="om"><h2>Om Toscana</h2><p>
-    Det är en njutning att göra utflykter över Toscanas böljande kullar, förbi cypresser och restaurerade lantgårdar till tusenåriga byar där tiden tycks stått stilla. Kan ett landskap bli skönare och mer perfekt än Toscana?
-
-    På Toscanas kullar odlades vin redan av romarna. Landskapet har knappt ändrat utseende sedan dess. Många anser att det är världens vackraste landskap. I Toscana är kulturen aldrig långt borta. Det var här genier som Leonardo, Michelangelo och Dante skapade sina mästerverk. Florens skönhet med alla renässanspalats och konstverk är unik i Europa. Här kan du tillbringa flera dagar bland mäktiga palats och fantastiska museer. Intakta medeltidsbyar som Siena, Lucca och Volterra förtrollar sina gäster med stillsamma stengränder och intima torg.
-</p>
+<section class="kategori">
+    <h2>
+        <a href="om-toscana.html" class="rubrik-knapp">Om Toscana</a>
+    </h2>
+    <p>
+        Toscana är en region i mellersta Italien med en yta på cirka 23 000 kvadratkilometer. Den regionala huvudstaden heter Florens och det bor ca 4 miljoner invånare i området. Toscana är känt för sitt vackra landskap och spännande kulturhistoria.....................
+    </p>
 </section>
 
 <!-- Sektion Byar och Städer  -->
-<section id="byar"><h2>Byar och städer</h2>
-    <p>De största städerna i Toscana är Florens, Siena, Pisa och Lucca. Alla dessa städer erbjuder en mängd historia, konst och kultur.
+<section class="kategori">
+    <h2><a href="byar-och-stader.html" class="rubrik-knapp">Byar och städer</a></h2>
+    <p>Toscana med sitt böljande landskap, rika kulturarv och enastående arkitektur, är en region som lockar resenärer från hela världen. Här möts historien och nutiden i en harmonisk blandning som erbjuder något för alla. Med allt från medeltida städer och renässansens mästerverk till fantastiska vinodlingar och idylliska landskap, är Toscana ett resmål som garanterar oförglömliga upplevelser.
 
-    Florens är huvudstaden i Tocana och är ett av de mest populära turistmålen i hela Italien. Hem till några av världens mest kända konstmuseer, såsom Uffizigalleriet och Accademia Gallery, samt ett antal andra viktiga historiska platser, är Florens ett måste för alla som besöker Tocana.
-
-    Siena är ett annat populärt turistmål i Toscana. Känd för sin medeltida arkitektur och sitt årliga hästkapplöpning Palio, är Siena en stad med en lång historia som går tillbaka till medeltiden.
-
-    Lucca är en muromgärdad stad i Toscana, Italien. Det är huvudstaden i provinsen Lucca och ligger vid floden Serchio, i ett kuperat område. Lucca grundades av etruskerna och blev en romersk koloni 180 f.Kr. Staden blomstrade under medeltiden och var ett viktigt centrum för handel mellan Italien och Frankrike. År 1799 erövrade Napoleon Bonaparte Lucca och gjorde det till en del av sin syster Elisas kungarike Etrurien. Efter Napoleons fall blev Lucca en del av storfurstendömet Toscana som styrdes av huset Lorraine. Idag är Lucca en livlig stad med ett välbevarat historiskt centrum.
-
-    Pisa är mest känt för sitt lutande torn, klocktornet i stadens katedral. Tornet började luta under byggandet på 1100-talet på grund av instabil mark och idag lutar det i en vinkel på cirka 15 grader. Besökare kan klättra till toppen av tornet för vidsträckt utsikt över Pisa och den omgivande landsbygden.
-
-    Staden Pisa ligger i centrala Italien vid floden Arno. Det är bara en kort bilresa från Florens, och det är en fantastisk dagstur om du bor i den staden. Förutom det lutande tornet, är Pisa hem för ett antal andra historiska kyrkor och byggnader, samt massor av bra restauranger och kaféer.
-
-    San Gimignano är en charmig liten stad som ligger i hjärtat av Toscana, omkring 56 kilometer söder om Florens. Staden är mest känd för sin unika skyline av medeltida torn, som har gett den smeknamnet "Medeltidens Manhattan". San Gimignano grundades under det etruskiska riket, men det var under medeltiden som staden verkligen blomstrade och blev en viktig plats längs pilgrimsleden Via Francigena.
-
-    Idag är San Gimignano en av de mest välbevarade medeltida städerna i Italien och har utsetts till UNESCO världsarv. Stadens centrum är omgivet av tjocka murar och smala, kullerstensbelagda gator som leder besökare genom tiden. Stadens mest kända attraktion är dess 14 kvarvarande torn, som en gång var över 70 till antalet. De mest kända tornen är Torre Grossa och Torre della Rognosa, som båda erbjuder fantastisk utsikt över staden och det omgivande landskapet.
-
-    Viareggio är en livlig kuststad belägen cirka 30 kilometer norr om Pisa. Staden är känd för sin långa och inbjudande sandstrand, samt för sina eleganta strandpromenader kantade av affärer, restauranger och kaféer. Viareggio är en populär destination för såväl italienare som internationella turister som söker sol, hav och avkoppling.
+        För den som planerar en resa till denna förtrollande del av Italien, kommer är här en guide till några av de mest sevärda platserna som inte får missas.
     </p>
 </section>
 
 <!-- Sektion mat och vin -->
-<section id="mat"><h2>Mat och vin</h2>
+<section class="kategori">
+    <h2><a href="mat-och-vin.html" class="rubrik-knapp">Mat och vin</a></h2>
     <p>
-    Den toskanska matlagningen är rustik och jordnära, med fokus på färska, lokala råvaror. En av de mest kända rätterna är ribollita, en hjärtlig grönsakssoppa gjord på gårdagens bröd, kål, bönor och andra säsongsbetonade grönsaker. Denna rätt är en perfekt representation av toskansk matlagning – enkel, näringsrik och full av smak.
+        Toscana är verkligen en gastronomisk pärla. Regionen är känd för sitt rika kulinariska arv, där traditionella rätter och lokala ingredienser kombineras för att skapa enkla men utsökta måltider. Här är maten och vinet en integrerad del av kulturen, och varje måltid är en möjlighet att fira livet, familjen och vänskapen.
 
-    En annan älskad rätt är pappa al pomodoro, en tjock tomatsoppa gjord på mogna tomater, bröd, olivolja och basilika. Den serveras vanligtvis ljummen eller kall och är särskilt populär under sommarmånaderna. Panzanella, en brödsallad med tomater, gurka, lök och basilika, är en annan fräsch och smakrik rätt som ofta serveras under de varma månaderna.
-
-    För köttälskare är Toscana en dröm. Bistecca alla Fiorentina, en tjock t-benstek från den lokala Chianina-boskapen, är en av de mest kända kötträtterna. Den grillas till perfektion och serveras sällan för att bevara sin naturliga smak och saftighet. Cinghiale in umido, eller vildsvinsgryta, är en annan regional specialitet som ofta serveras med pappardelle, breda bandpasta. Vildsvinsköttet marineras i vin och örter innan det långkokas till mör perfektion.
-
-    När det gäller pasta är Toscana känt för pici, en tjock, handrullad pasta som ofta serveras med enkla såser som all'aglione (vitlökssås) eller med vildsvinsragu. Tortelli di patate, fyllda med potatis och ofta serverade med köttsås, är en annan traditionell pastarätt som är populär i regionen.
-
-    Bröd är en grundläggande del av toskansk matlagning, och det mest kända brödet är utan tvekan pane sciocco, ett osaltat bröd som traditionellt bakas i vedeldade ugnar. Detta bröd används som bas i många rätter och är perfekt att doppa i toskansk olivolja.
-
-    Olivolja är en annan hörnsten i toskansk matlagning. Den toskanska olivoljan är känd för sin höga kvalitet och distinkta smak, som är både fruktig och pepprig. Den används i allt från matlagning till att ringlas över sallader och bröd.
-</p>
+        Den toskanska matlagningen är rustik och jordnära, med fokus på färska, lokala råvaror. En av de mest kända rätterna är ribollita, en hjärtlig grönsakssoppa gjord på gårdagens bröd, kål, bönor och andra säsongsbetonade grönsaker. Denna rätt är en perfekt representation av toskansk matlagning – enkel, näringsrik och full av smak.
+    </p>
 </section>
 
 <!-- Sektion Vingårdar -->
-<section id="vingardar"><h2>Vingårdar</h2>
-    <p>
-    Toscana är en av världens mest prestigefyllda vinregioner och är hem för några av Italiens mest berömda vingårdar. Här bjuds man på en vinupplevelse som kombinerar historia, kultur och gastronomi på ett alldeles underbart sätt. Från de robusta Chianti-vinerna till de eleganta Brunello di Montalcino, erbjuder Toscanas vingårdar en resa genom århundraden av vintradition och innovation.
+<section class="kategori">
+    <h2><a href="vingardar.html" class="rubrik-knapp">Vingårdar</a></h2>
+    <p>Toscana är en av världens mest prestigefyllda vinregioner och är hem för några av Italiens mest berömda vingårdar. Här bjuds man på en vinupplevelse som kombinerar historia, kultur och gastronomi på ett alldeles underbart sätt. Från de robusta Chianti-vinerna till de eleganta Brunello di Montalcino, erbjuder Toscanas vingårdar en resa genom århundraden av vintradition och innovation.
 
-    Här är några av de bästa vingårdarna i Toscana, där du kan njuta av utsökta viner och enastående landskap.
-
-    Antinori nel Chianti Classico
-    Antinori nel Chianti Classico är en av de mest prestigefyllda vingårdarna i Toscana och en symbol för innovation och tradition. Beläget i hjärtat av Chianti-regionen, erbjuder denna moderna och imponerande anläggning en unik vinupplevelse. Här kan du delta i guidade turer som tar dig genom vingårdarna, de avancerade produktionsanläggningarna och de historiska källarna. Provsmakningarna inkluderar några av Antinoris mest berömda viner, såsom Tignanello och Solaia, som anses vara bland de bästa supertoscanska vinerna.
-
-    Biondi-Santi
-    Biondi-Santi, beläget i Montalcino, är en legendarisk vingård känd som Brunello di Montalcinos födelseplats. Vingården har en lång historia och har varit i familjen Biondi-Santis ägo i generationer. En rundtur här ger dig en fascinerande inblick i produktionen av Brunello-vinet, från druvodling till buteljering. Du får också möjlighet att smaka på deras exceptionella viner, inklusive några äldre årgångar som visar på vinets fantastiska lagringspotential.
-
-    Tenuta San Guido
-    Tenuta San Guido, hem till det berömda vinet Sassicaia, ligger nära Bolgheri vid den toskanska kusten. Sassicaia är en av Italiens mest hyllade viner och anses vara den första supertoscanskan. Vingården erbjuder exklusiva turer där du kan besöka de natursköna vingårdarna, de historiska källarna och lära dig om den unika terroiren som ger Sassicaia dess karakteristiska smak. Provsmakningen av deras viner, inklusive Sassicaia, är en upplevelse som varje vinentusiast bör uppleva.
-
-    Castello di Ama
-    Castello di Ama, beläget i hjärtat av Chianti Classico-regionen, är en vingård som kombinerar vinproduktion med samtidskonst. Vingården är känd för sina eleganta Chianti Classico-viner och sina innovativa konstinstallationer. En rundtur här inkluderar besök i de vackra vingårdarna, källarna och konstutställningarna som finns spridda över egendomen. Provsmakningen av deras prisbelönta viner, såsom L'Apparita och Castello di Ama Chianti Classico, är en höjdpunkt.
-
-    Frescobaldi
-    Frescobaldi är en av Toscanas äldsta och mest respekterade vinfamiljer, med en historia som sträcker sig över 700 år. Familjen äger flera vingårdar runt om i Toscana, inklusive Tenuta di Castiglioni, Castello Nipozzano och Castelgiocondo. Varje vingård har sin egen unika karaktär och terroir. Frescobaldi erbjuder guidade turer och vinprovningar där du kan upptäcka deras omfattande utbud av viner, från Chianti till Brunello och de prestigefyllda supertoscanska vinerna.
-
-    Avignonesi
-    Avignonesi, beläget nära Montepulciano, är känd för sin hållbara och biodynamiska vinproduktion. Vingården är särskilt berömd för sitt Vino Nobile di Montepulciano, ett elegant och välbalanserat vin. En rundtur på Avignonesi inkluderar en promenad genom vingårdarna, ett besök i de biodynamiska trädgårdarna och en insikt i deras miljövänliga vinproduktionsmetoder. Provsmakningen erbjuder en möjlighet att njuta av deras utsökta viner, inklusive deras unika Vin Santo.
-</p>
+        Här är några av de bästa vingårdarna i Toscana, där du kan njuta av utsökta viner och enastående landskap.</p>
 </section>
+
 
 <!-- Sektion sevärdheter -->
-<section id="sevardheter"><h2>Sevärdheter</h2><p>
-    För den som planerar en resa till denna förtrollande del av Italien, kommer är här en guide till några av de mest sevärda platserna som inte får missas.
+<section class="kategori">
+    <h2><a href="sevardheter.html" class="rubrik-knapp">Sevärdheter</a></h2>
+    <p>Toscana med sitt böljande landskap, rika kulturarv och enastående arkitektur, är en region som lockar resenärer från hela världen. Här möts historien och nutiden i en harmonisk blandning som erbjuder något för alla. Med allt från medeltida städer och renässansens mästerverk till fantastiska vinodlingar och idylliska landskap, är Toscana ett resmål som garanterar oförglömliga upplevelser.
 
-    Piazza del Campo, Siena
-    Piazza del Campo i Siena är en av de mest ikoniska platserna i Toscana och kanske i hela Italien. Detta unika torg, format som en snäcka, är känt för sin skönhet och sin betydelse i stadens sociala och kulturella liv. Här äger den världsberömda hästkapplöpningen Palio di Siena rum två gånger om året, en händelse som fyller staden med passion och energi. Runt torget ligger imponerande byggnader som Palazzo Pubblico och Torre del Mangia, där du kan njuta av en fantastisk utsikt över stadens tegeltak och det toskanska landskapet.
-
-    Duomo di Firenze, Florens
-    Florens katedral, Duomo di Firenze, med sin magnifika kupol designad av Filippo Brunelleschi, är en av de mest kända och besökta sevärdheterna i Toscana. Den gotiska fasaden och den imponerande interiören med fresker av Vasari gör detta till ett måste för alla besökare. Kupolen erbjuder en fantastisk panoramavy över Florens, och en klättring till toppen är väl värd mödan.
-
-    Lutande tornet i Pisa
-    Det lutande tornet i Pisa är en av världens mest igenkännliga byggnader. Tornet, som började luta under byggprocessen på 1100-talet, är en del av Piazza dei Miracoli, ett UNESCO-världsarv. Här kan du också besöka katedralen, dopkapellet och kyrkogården, som alla är exempel på den imponerande romanska arkitekturen.
-
-    San Gimignano
-    San Gimignano, känd som "Medeltidens Manhattan" på grund av sina många torn, är en annan höjdpunkt i Toscana. Stadens medeltida charm är välbevarad, och en promenad genom de smala gatorna ger en känsla av att resa tillbaka i tiden. Piazza della Cisterna och Piazza del Duomo är två av de mest framstående torgen, omgivna av historiska byggnader och vackra torn.
-
-    Val d'Orcia
-    Val d'Orcia, ett pittoreskt landskap i södra Toscana, är ett UNESCO-världsarv känt för sina böljande kullar, cypresser och charmiga byar. Området är perfekt för vandringar, cykelturer och bilresor, där du kan utforska byar som Pienza, Montepulciano och Montalcino. Val d'Orcia erbjuder också enastående möjligheter till vinprovning, särskilt för dem som vill smaka på de berömda vinerna från regionen.
-
-    Uffizierna, Florens
-    Uffizierna i Florens är ett av världens mest betydande konstmuseer, med en otrolig samling av renässanskonst. Här kan du beundra mästerverk av konstnärer som Botticelli, Michelangelo, Leonardo da Vinci och Raphael. Museet i sig är ett arkitektoniskt mästerverk och erbjuder en resa genom konsthistorien som är oöverträffad.
-
-    Chianti-området
-    Chianti-regionen, belägen mellan Florens och Siena, är känd för sina fantastiska landskap och sitt utsökta vin. En tur genom Chianti innebär besök till charmiga byar som Greve in Chianti och Castellina in Chianti, där du kan njuta av vinprovningar och besöka traditionella vingårdar. Landskapet, med sina vingårdar och olivlundar, är perfekt för en avkopplande dagstur.
-
-    Lucca
-    Lucca är en charmig stad känd för sina välbevarade renässansmurar som omger stadens historiska centrum. En promenad eller cykeltur på murarna erbjuder en unik vy över staden. Inuti murarna hittar du pittoreska torg, smala gator och vackra kyrkor som Duomo di San Martino. Lucca är också känd för sina musikfestivaler och som födelseplats för kompositören Giacomo Puccini.
-
-    Arezzo
-    Arezzo är en stad rik på konst och historia, med sevärdheter som Piazza Grande, den gotiska katedralen och Basilica di San Francesco, där du kan se Piero della Francescas fresker. Staden är också känd för sin stora antikmarknad och den medeltida tornerspelen Giostra del Saracino, som hålls två gånger om året och erbjuder en fascinerande inblick i stadens traditioner.
-
-    Pienza
-    Pienza, designad av påven Pius II som en "idealistisk stad", är ett mästerverk av renässansarkitektur. Stadens centrum med Piazza Pio II, Palazzo Piccolomini och Duomo di Pienza är vackert bevarat. Pienza är också känd för sin utsökta pecorinoost, och en promenad genom stadens gränder erbjuder både kulturella och kulinariska upplevelser.
-
-    Montepulciano
-    Montepulciano är en charmig medeltida stad belägen på en kulle, känd för sitt världsberömda vin, Vino Nobile di Montepulciano. Stadens historiska centrum är fyllt med renässanspalats, gamla kyrkor och charmiga torg. Piazza Grande, med dess imponerande katedral och Palazzo Comunale, är stadens hjärta. Härifrån kan du också besöka de många vinkällarna och njuta av vinprovningar som erbjuder några av de bästa vinerna i Toscana.
-
-    Cortona
-    Cortona, en av Toscanas äldsta städer, erbjuder en fantastisk utsikt över Valdichiana och Trasimeno-sjön. Den historiska stadskärnan är full av smala gränder, medeltida byggnader och charmiga butiker. Besök Museo dell'Accademia Etrusca för att se en imponerande samling etruskiska artefakter, eller ta en promenad upp till Basilica di Santa Margherita och Fortezza Medicea för panoramavyer över det omgivande landskapet.
-</p>
+        För den som planerar en resa till denna förtrollande del av Italien, kommer är här en guide till några av de mest sevärda platserna som inte får missas.
+    </p>
 </section>
+
 
 <!--Sektion Karta-->
-<section id="karta"><h2>Karta</h2>
-    <p>
-    Hitta i vår Toscana karta och se det vackra landskapet där byar, jordbruk och vinodlingar samsas. Den regionala huvudstaden är Florens eller Firenze som staden heter på italienska. Du hittar Toscana strax norr om Italiens mittpunkt, längs med landets västkust.
-
-    Toscana är framför allt känt för sitt vackra landskap, dess rika konstnärliga arv och kultur. Toscana anses vara den italienska renässansens födelseplats, och här har ett flertal inflytelserika och kända personer bott genom historiens lopp. På en karta över Toscana ser du de mest populära turistorterna i området, vilka bland annat inkluderar Florens, Pisa, Siena, Livorno och Lucca.
-</p>
+<section class="kategori">
+    <h2><a href="karta.html" class="rubrik-knapp">Karta</a></h2>
+    <p>Hitta i vår Toscana karta och se det vackra landskapet där byar, jordbruk och vinodlingar samsas. Den regionala huvudstaden är Florens eller Firenze som staden heter på italienska. Du hittar Toscana strax norr om Italiens mittpunkt, längs med landets västkust.</p>
 </section>
+<h2>Karta över Toscana</h2>
+<div id="map" style="height: 500px;"></div>
 
 <!-- Footer -->
 <footer>
     <button onclick="scrollToTop()">Till toppen</button>
     <a href="mailto:kontakt@toscanaguide.se">Kontakta oss</a>
     <div class="kommentar">
-        <h3>Kommentarer</h3>
+        <h3>Kommentera eller tipsa om du har tips kring Toscana som vi inte vet om</h3>
         <textarea placeholder="Skriv din kommentar här..."></textarea>
     </div>
 </footer>

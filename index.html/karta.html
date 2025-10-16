@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8" />
+    <title>Karta</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+<header>
+    <h1>Karta över Toscana</h1>
+</header>
+
+<main>
+    <div id="map" style="height: 400px;"></div>
+    <div class="back-button">
+        <a href="index.html">← Tillbaka till startsidan</a>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Reseguide till Toscana</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+    const map = L.map('map').setView([43.7696, 11.2558], 8);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap'
+    }).addTo(map);
+</script>
+</body>
